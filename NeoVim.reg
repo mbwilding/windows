@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; For files
+[HKEY_CLASSES_ROOT\*\shell\NeoVim]
+@="Open with NeoVim"
+"Icon"="C:\\Program Files\\Neovim\\bin\\nvim-qt.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\NeoVim\command]
+@="\"C:\\Program Files\\Neovim\\bin\\nvim.exe\" \"%1\""
+
+; For folders
+[HKEY_CLASSES_ROOT\Directory\shell\NeoVim]
+@="Open with NeoVim"
+"Icon"="C:\\Program Files\\Neovim\\bin\\nvim-qt.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\NeoVim\command]
+@="cmd.exe /c \"pushd \"%V\" && \"C:\\Program Files\\Neovim\\bin\\nvim.exe\" \"%V\""
+
+; For folder background
+[HKEY_CLASSES_ROOT\Directory\Background\shell\NeoVim]
+@="Open with NeoVim"
+"Icon"="C:\\Program Files\\Neovim\\bin\\nvim-qt.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\NeoVim\command]
+@="\"C:\\Program Files\\Neovim\\bin\\nvim.exe\" \"%V\""
